@@ -87,7 +87,7 @@
 						<p>nazwisko:</p>
 					</div>
 					<div class="col-md-4">
-						<p>Wojcik</p>
+						<p id = "surname">Kowalski</p>
 					</div>
 				</div>
 				<div class="row">
@@ -95,7 +95,7 @@
 						<p>imię:</p>
 					</div>
 					<div class="col-md-4">
-						<p>Adam</p>
+						<p id = "name">Jan</p>
 					</div>
 				</div>
 				<div class="row">
@@ -103,7 +103,7 @@
 						<p>grupa:</p>
 					</div>
 					<div class="col-md-4">
-						<p>1</p>
+						<p id = "group">1</p>
 					</div>
 				</div>
 				<div class="row">
@@ -111,7 +111,7 @@
 						<p>email:</p>
 					</div>
 					<div class="col-md-4">
-						<p>20500@student.ans-elblag.pl</p>
+						<p id = "email">999@student.ans-elblag.pl</p>
 					</div>
 				</div>
 				<div class="row">
@@ -119,7 +119,7 @@
 						<p>nr indeksu:</p>
 					</div>
 					<div class="col-md-4">
-						<p>20500</p>
+						<p id = "index">999</p>
 					</div>
 				</div>
 
@@ -162,43 +162,43 @@
 
 <!--				ZADANIE 1. Dodawanie i usuwanie elementów z tablicy-->
 
-<!--				<script>-->
-<!--					const tablica = [ 'pierwszy',-->
-<!--						'drugi',-->
-<!--						'trzeci',-->
-<!--						'czwarty'-->
-<!--					];-->
-<!--				</script>-->
+				<script>
+					const tablica = [ 'pierwszy',
+						'drugi',
+						'trzeci',
+						'czwarty'
+					];
+				</script>
 
 <!--				<script>-->
 <!--					alert(tablica[3]);-->
 <!--				</script>-->
 
-<!--                <script>-->
-<!--					tablica[tablica.length-1] = 'ostatni';-->
-<!--					alert(tablica[tablica.length-1]);-->
-<!--				</script>-->
+                <script>
+					tablica[tablica.length-1] = 'ostatni';
+					// alert(tablica[tablica.length-1]);
+				</script>
 
-<!--                <script>-->
-<!--					tablica[4] = 'piaty';-->
-<!--					alert(tablica[tablica.length-1]);-->
-<!--				</script>-->
+                <script>
+					tablica[4] = 'piaty';
+					// alert(tablica[tablica.length-1]);
+				</script>
 
-<!--				<script>-->
-<!--					tablica[tablica.length] = 'szosty';-->
-<!--					alert(tablica[tablica.length-1]);-->
-<!--				</script>-->
+				<script>
+					tablica[tablica.length] = 'szosty';
+					// alert(tablica[tablica.length-1]);
+				</script>
 
-<!--				<script>-->
-<!--					tablica.push('osmy', 'dziewiaty', 'dziesiaty', 'jedenasty');-->
-<!--					alert(tablica[tablica.length-1]);-->
-<!--				</script>-->
+				<script>
+					tablica.push('osmy', 'dziewiaty', 'dziesiaty', 'jedenasty');
+					// alert(tablica[tablica.length-1]);
+				</script>
 
-<!--				<script>-->
-<!--					tablica.unshift('zerowy', 'kolejny')-->
-<!--					alert(tablica[0]);-->
-<!--					alert(tablica[1]);-->
-<!--				</script>-->
+				<script>
+					tablica.unshift('zerowy', 'kolejny')
+					// alert(tablica[0]);
+					// alert(tablica[1]);
+				</script>
 
 
 <!--                ZADANIE 2.-->
@@ -241,6 +241,17 @@
                     document.write('<p>Ilość znacznikow p na stronie <strong>' + paragraphsCounter + '</strong></p>');
                     document.write('<p>Ilość znacznikow div na stronie <strong>' + divsCounter + '</strong></p>');
                 </script>
+
+
+<!--                ZADANIE 4. Umieszczanie danych w akapitach przy pomocy DOM-->
+
+				<script>
+					document.getElementById("surname").innerHTML = "Wójcik";
+					document.getElementById("name").innerHTML = "Adam";
+					document.getElementById("group").innerHTML = "1";
+					document.getElementById("email").innerHTML = "20500@student.ans-elblag.pl";
+					document.getElementById("index").innerHTML = "20500";
+				</script>
 
 			</div>
 		</div>
