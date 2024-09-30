@@ -253,6 +253,32 @@
 					document.getElementById("index").innerHTML = "20500";
 				</script>
 
+				<p id = "firstP"></p>
+
+				<script>
+					let firstPContent = '';
+					let i = 0;
+
+					while (i < tablica.length) {
+						firstPContent += tablica[i] + ' ';
+						i++;
+					}
+
+					document.getElementById("firstP").innerHTML = firstPContent;
+				</script>
+
+				<p id = "secoundP"></p>
+
+				<script>
+					let secoundPContent = '';
+
+					for (let i = 0; i < tab2.length / 2; i++) {
+						secoundPContent += tab2[i] + ' ';
+					}
+
+					document.getElementById("secoundP").innerHTML = secoundPContent;
+				</script>
+
 			</div>
 		</div>
 	</section>
