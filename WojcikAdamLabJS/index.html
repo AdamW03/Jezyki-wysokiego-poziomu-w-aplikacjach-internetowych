@@ -157,6 +157,7 @@
 <!--					document.write('<p>Ćw. 1. Witaj, ' + name + '</p>');-->
 <!--				</script>-->
 
+
 <!--				2. Tablice-->
 
 <!--				ZADANIE 1. Dodawanie i usuwanie elementów z tablicy-->
@@ -199,6 +200,7 @@
 <!--					alert(tablica[1]);-->
 <!--				</script>-->
 
+
 <!--                ZADANIE 2.-->
 
                 <script>
@@ -222,6 +224,23 @@
                 </script>
 
 
+<!--                3. DOM-->
+
+<!--                ZADANIE 3.-->
+
+                <script>
+                    const formsCounter = document.forms.length;
+                    const linksCounter = document.links.length;
+                    const imagesCounter = document.images.length;
+                    const paragraphsCounter = document.getElementsByTagName('p').length;
+                    const divsCounter = document.getElementsByTagName('div').length;
+
+                    document.write('<br><p>Ilość elementów na stronie z sekcji forms <strong>' + formsCounter + '</strong></p>');
+                    document.write('<p>Ilość elementów na stronie z sekcji links <strong>' + linksCounter + '</strong></p>');
+                    document.write('<p>Ilość elementów na stronie z sekcji images <strong>' + imagesCounter + '</strong></p>');
+                    document.write('<p>Ilość znacznikow p na stronie <strong>' + paragraphsCounter + '</strong></p>');
+                    document.write('<p>Ilość znacznikow div na stronie <strong>' + divsCounter + '</strong></p>');
+                </script>
 
 			</div>
 		</div>
