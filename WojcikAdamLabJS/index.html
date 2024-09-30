@@ -279,6 +279,27 @@
 					document.getElementById("secoundP").innerHTML = secoundPContent;
 				</script>
 
+				<button onclick="myData()">Wyświetl informacje o mnie</button>
+
+				<script>
+					function myData() {
+						const surname = document.getElementById("surname").innerText;
+						const name = document.getElementById("name").innerText;
+						const group = document.getElementById("group").innerText;
+						const email = document.getElementById("email").innerText;
+						const index = document.getElementById("index").innerText;
+
+						const info = 'O mnie:\n'
+								+ '\nNazwisko: ' + surname
+								+ '\nImie: ' + name
+								+ '\nGrupa: ' + group
+								+ '\nE-mail: ' + email
+								+ '\nIndex: ' + index;
+
+						alert(info);
+					}
+				</script>
+
 			</div>
 		</div>
 	</section>
