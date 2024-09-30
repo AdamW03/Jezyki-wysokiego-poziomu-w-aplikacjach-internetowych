@@ -134,6 +134,8 @@
 			<div class="jumbotron">
 				<h1>Projekt 1</h1>
 
+<!--				1. Kontrola ładowania się skryptów: async, defer-->
+
 <!--				<script>-->
 <!-- 					let name = prompt('Jak masz na imię?', '');-->
 <!--				</script>-->
@@ -148,13 +150,28 @@
 <!--					document.write('<p>Ćw. 1. Witaj, ' + name + '</p>');-->
 <!--				</script>-->
 
-				<script async>
- 					let name = prompt('Jak masz na imię?', '');
-				</script>
-				<script async>
-					document.write('<p>Ćw. 1. Witaj, ' + name + '</p>');
+<!--				<script async>-->
+<!-- 					let name = prompt('Jak masz na imię?', '');-->
+<!--				</script>-->
+<!--				<script async>-->
+<!--					document.write('<p>Ćw. 1. Witaj, ' + name + '</p>');-->
+<!--				</script>-->
+
+<!--				2. Tablice-->
+
+<!--				ZADANIE 1. Dodawanie i usuwanie elementów z tablicy-->
+
+				<script>
+					const tablica = [ 'pierwszy',
+						'drugi',
+						'trzeci',
+						'czwarty'
+					];
 				</script>
 
+				<script>
+					alert(tablica[3]);
+				</script>
 
 			</div>
 		</div>
@@ -303,7 +320,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
 	<script src="js/forms.js"></script>
-	
+
 </body>
 
 </html>
