@@ -1,1 +1,1 @@
-# J-zyki-wysokiego-poziomu-w-aplikacjach-internetowych
+# Jezyki-wysokiego-poziomu-w-aplikacjach-internetowych
