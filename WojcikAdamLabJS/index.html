@@ -202,11 +202,11 @@
 <!--                ZADANIE 2.-->
 
                 <script>
-                    const tab2 = ["Bublow",
-                        "Gitara",
-                        "Szyman",
-                        "David",
-                        "Klapkowski"
+                    const tab2 = ['Bublow',
+                        'Gitara',
+                        'Szyman',
+                        'David',
+                        'Klapkowski'
                     ];
 
                     document.write('<p>Pierwszy element to <strong>');
@@ -214,6 +214,11 @@
 
                     document.write('<p>Pierwszy element to <strong>');
                     document.write(tab2[tab2.length-1] + '</strong></p>');
+
+                    tab2.unshift('Harkonen');
+
+                    document.write('<p>Pierwszy element po dodaniu nowego to <strong>');
+                    document.write(tab2[0] + '</strong></p>');
                 </script>
 
 
