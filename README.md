@@ -1,4 +1,4 @@
 # Jezyki-wysokiego-poziomu-w-aplikacjach-internetowych
-# Adam Wójcik 20500
-# 20500@student.ans-elblag.pl
-# Laboratorium 1
+<h2>Laboratorium 1</h2><br>
+<p>Adam Wójcik 20500<br>
+20500@student.ans-elblag.pl</p>
