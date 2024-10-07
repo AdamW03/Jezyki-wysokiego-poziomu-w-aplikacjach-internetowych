@@ -146,6 +146,53 @@
 				</script>
 
 <!--				ZADANIE 1. Robimy nowy quiz wykorzystując poznane dotąd	techniki.-->
+<!--                ZADANIE 2. Implementacja.-->
+
+                <div id="quizContent"></div>
+				<button id="quizButton" onclick="quiz() ">Sprawdź się w quizie!</button>
+                <div id="ans"></div>
+
+				<script>
+					const questions = [
+					['Ile gwiazd znajduje się w naszym Układzie Słonecznym?', 1],
+					['Ile znanych planet karłowatych znajduje się w Układzie Słonecznym?', 5],
+					['Ile księżyców ma Mars?', 2],
+					['Ile pełnych lat świetlnych ma odległość do najbliższej gwiazdy (Proxima Centauri)?', 4],
+					['Ile planet znajduje się w zewnętrznej części Układu Słonecznego?', 4],
+					['Ile planet ma układ Proxima Centauri?', 3],
+					['Ile księżyców ma Uran?', 27],
+					['Ile konstelacji rozpoznaje się na niebie?', 88]
+					];
+
+                    function quiz() {
+                        if (q > 0) {
+                            let answer = document.getElementById('answer').value;
+                            if (answer.toString() === questions[q-1][1].toString()) {
+                                score++;
+                            }
+                        }
+                        testQuestion(questions[q]);
+                        q++;
+                    }
+
+                    function testQuestion(question) {
+                        const quizContent = document.getElementById('quizContent');
+                        const quizButton = document.getElementById('quizButton');
+
+                        if (q < questions.length - 1) {
+                            quizContent.innerHTML = '<p>' + question[0] + '</p>' + '<br><input type="text" id="answer" placeholder="Wpisz odpowiedź">';
+                            quizButton.innerHTML = 'Następne pytanie' + q;
+                        } else {
+                            let message = 'Liczba punktów: ' + score;
+                            message += ' z ' + questions.length;
+                            message += '.';
+                            quizContent.innerHTML = '<p>' + message + '</p>';
+                        }
+                    }
+
+                    //ostatnie pytanie + spradzanie odpowiedzi z komunikatem
+                </script>
+
 
 
 
