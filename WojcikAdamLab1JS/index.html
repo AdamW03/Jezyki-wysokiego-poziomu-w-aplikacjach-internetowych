@@ -351,14 +351,14 @@
 						checked++;
 
 						if (parseInt(userAnswer) === correctAnswer) {
-							quizAnserResult.innerHTML = userAnswer + ' - To prawidłowa odpowiedź!'
+							quizAnserResult.innerHTML = '<p>' + userAnswer + ' - To prawidłowa odpowiedź!' + '</p>';
 							score++;
 						} else {
-							quizAnserResult.innerHTML = userAnswer + ' - To błędna odpowiedź! Prawidłowa to: ' + correctAnswer;
+							quizAnserResult.innerHTML = '<p>' + userAnswer + ' - To błędna odpowiedź! Prawidłowa to: ' + correctAnswer + '</p>';
 						}
 
 						if (checked == 8) {
-							quizContent.innerHTML += 'Twój wynik to ' + score + '/8 !';
+							quizContent.innerHTML += '<h2>Twój wynik to ' + score + '/8 !</h2>';
 						}
 					}
 				</script>
