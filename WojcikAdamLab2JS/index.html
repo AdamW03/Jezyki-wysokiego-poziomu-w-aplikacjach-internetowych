@@ -27,7 +27,7 @@
 	<script>
 		let score = 0;
 		let q = 0;
-	</script>cd lab
+	</script>
 
 </head>
 
@@ -148,28 +148,33 @@
 <!--				ZADANIE 1. Robimy nowy quiz wykorzystując poznane dotąd	techniki.-->
 <!--                ZADANIE 2. Implementacja.-->
 
+                <div id="quizResult"></div>
                 <div id="quizContent"></div>
-				<button id="quizButton" onclick="quiz() ">Sprawdź się w quizie!</button>
+				<button id="quizButton" onclick="quiz() ">Sprawdź się w Quizie!</button>
                 <div id="ans"></div>
 
 				<script>
 					const questions = [
-					['Ile gwiazd znajduje się w naszym Układzie Słonecznym?', 1],
-					['Ile znanych planet karłowatych znajduje się w Układzie Słonecznym?', 5],
-					['Ile księżyców ma Mars?', 2],
-					['Ile pełnych lat świetlnych ma odległość do najbliższej gwiazdy (Proxima Centauri)?', 4],
-					['Ile planet znajduje się w zewnętrznej części Układu Słonecznego?', 4],
-					['Ile planet ma układ Proxima Centauri?', 3],
-					['Ile księżyców ma Uran?', 27],
-					['Ile konstelacji rozpoznaje się na niebie?', 88]
+					['Ile gwiazd znajduje się w naszym Układzie Słonecznym?', '1'],
+					['Ile znanych planet karłowatych znajduje się w Układzie Słonecznym?', '5'],
+					['Ile księżyców ma Mars?', '2'],
+					['Ile pełnych lat świetlnych ma odległość do najbliższej gwiazdy (Proxima Centauri)?', '4'],
+					['Ile planet znajduje się w zewnętrznej części Układu Słonecznego?', '4'],
+					['Ile planet ma układ Proxima Centauri?', '3'],
+					['Ile księżyców ma Uran?', '27'],
+					['Ile konstelacji rozpoznaje się na niebie?', '88']
 					];
 
                     function quiz() {
                         if (q > 0) {
                             let answer = document.getElementById('answer').value;
-                            if (answer.toString() === questions[q-1][1].toString()) {
+							const quizResult = document.getElementById('quizResult');
+                            if (answer === questions[q-1][1]) {
+								quizResult.innerHTML = '<p>' + answer + ' - To prawidłowa odpowiedź!' + '</p>';
                                 score++;
-                            }
+                            } else {
+								quizResult.innerHTML = '<p>' + answer + ' - To błędna odpowiedź! Prawidłowa to: ' + questions[q-1][1] + '</p>';
+							}
                         }
                         testQuestion(questions[q]);
                         q++;
@@ -179,23 +184,22 @@
                         const quizContent = document.getElementById('quizContent');
                         const quizButton = document.getElementById('quizButton');
 
-                        if (q < questions.length - 1) {
-                            quizContent.innerHTML = '<p>' + question[0] + '</p>' + '<br><input type="text" id="answer" placeholder="Wpisz odpowiedź">';
-                            quizButton.innerHTML = 'Następne pytanie' + q;
+                        if (q < questions.length) {
+                            quizContent.innerHTML = '<p>' + question[0] + '</p>' + '<input type="text" id="answer" placeholder="Wpisz odpowiedź">';
+							if (q === questions.length - 1) {
+								quizButton.innerHTML = 'Zakończ Quiz';
+							} else {
+								quizButton.innerHTML = 'Następne Pytanie';
+							}
                         } else {
+							quizButton.style.display = 'none';
                             let message = 'Liczba punktów: ' + score;
                             message += ' z ' + questions.length;
                             message += '.';
-                            quizContent.innerHTML = '<p>' + message + '</p>';
+                            quizContent.innerHTML = '<h2>' + message + '</h2>';
                         }
                     }
-
-                    //ostatnie pytanie + spradzanie odpowiedzi z komunikatem
                 </script>
-
-
-
-
 			</div>
 		</div>
 	</section>
