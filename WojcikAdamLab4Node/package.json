@@ -1,0 +1,11 @@
+{
+  "name": "wojcikadamlab4node",
+  "version": "1.0.0",
+  "description": "lab4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Wojcik 20500",
+  "license": "ISC"
+}
