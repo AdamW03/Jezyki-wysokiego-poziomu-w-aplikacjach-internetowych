@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand>img {
+    height: 100%;
+    padding: 5px;
+    width: auto;
+}
+
+.logotext {
+    height: 100%;
+    padding: 15px;
+    width: auto;
+}
+
+/*ZADANIE 1. Podstawy jQuery*/
+.pq {
+    float: left;
+    clear: left;
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    background-color: rgba(191, 204, 255, 0.3);
+    border-radius: 10px;
+    margin: 15px 0;
+    font-style: normal;
+}
+
+.pullquote {
+    float: right;
+    clear: right;
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 211, 224, 0.5);
+    border-radius: 10px;
+    margin: 20px 0 10px 10px;
+    font-style: italic;
+}
