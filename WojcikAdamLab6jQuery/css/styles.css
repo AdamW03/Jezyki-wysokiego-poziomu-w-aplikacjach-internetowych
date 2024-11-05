@@ -17,8 +17,7 @@
 
 /*ZADANIE 1. Podstawy jQuery*/
 .pq {
-    float: left;
-    clear: left;
+    display: block;
     width: 100%;
     padding: 8px;
     font-size: 18px;
@@ -26,6 +25,7 @@
     border-radius: 10px;
     margin: 15px 0;
     font-style: normal;
+    clear: both;
 }
 
 .pullquote {
