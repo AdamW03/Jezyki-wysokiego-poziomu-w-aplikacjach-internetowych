@@ -387,108 +387,104 @@
 				<h1>Projekt 5</h1>
 				<h2>ZADANIE 2. Na kreatywność i umiejętność czytania dokumentacji</h2><br>
 <!--				ZADANIE 3 - na kreatywność i umiejętność czytania dokumentacji-->
-
-				<table class="laboratory-table">
+				<table>
 					<thead>
-					<tr>
-						<td>Cytat</td>
-						<td>Input</td>
-						<td>Przycisk</td>
-						<td>Link</td>
-						<td>Lista</td>
-						<td>Checkbox</td>
-					</tr>
+						<tr>
+							<td>Cytat</td>
+							<td>Input</td>
+							<td>Przycisk</td>
+							<td>Link</td>
+							<td>Lista</td>
+							<td>Checkbox</td>
+						</tr>
 					</thead>
 					<tbody>
-					<tr class="parzysty">
-						<td>„Nie popełniaj błędów”</td>
-						<td><input type="text" placeholder="Wpisz coś..."></td>
-						<td><button class="example-button">Kliknij mnie</button></td>
-						<td><a href="#Projekt5">Przejdź do Projekt 5</a></td>
-						<td>
-							<ol>
-								<li>Opcja A</li>
-								<li>Opcja B</li>
-								<li>Opcja C</li>
-							</ol>
-						</td>
-						<td><input type="checkbox"> Akceptuję</td>
-					</tr>
-					<tr class="nieparzysty">
-						<td>„Człowiek uczy się na błędach, mędrzec uczy się na cudzych.”</td>
-						<td><input type="text" placeholder="Twoja odpowiedź..."></td>
-						<td><button class="example-button">Akcja</button></td>
-						<td><a href="#Projekt5">Zobacz szczegóły</a></td>
-						<td>
-							<ul style="list-style-type: square;">
-								<li>Element 1</li>
-								<li>Element 2</li>
-								<li>Element 3</li>
-							</ul>
-						</td>
-						<td><input type="checkbox"> Zgadzam się na warunki</td>
-					</tr>
-					<tr class="parzysty">
-						<td>„Co mnie nie zabije, to mnie udziwni.”</td>
-						<td><input type="text" placeholder="Komentarz..."></td>
-						<td><button class="example-button">Zatwierdź</button></td>
-						<td><a href="#Projekt5">Dowiedz się więcej</a></td>
-						<td>
-							<ul style="list-style-type: circle;">
-								<li>Etap I</li>
-								<li>Etap II</li>
-								<li>Etap III</li>
-							</ul>
-						</td>
-						<td><input type="checkbox"> Potwierdzam</td>
-					</tr>
-					<tr class="nieparzysty">
-						<td>„Każda droga zaczyna się od pierwszego kroku.”</td>
-						<td><input type="text" placeholder="Twoje myśli..."></td>
-						<td><button class="example-button">Sprawdź</button></td>
-						<td><a href="#Projekt5">Szczegóły projektu</a></td>
-						<td>
-							<ol style="list-style-type: lower-roman;">
-								<li>Krok pierwszy</li>
-								<li>Krok drugi</li>
-								<li>Krok trzeci</li>
-							</ol>
-						</td>
-						<td><input type="checkbox"> Zgadzam się</td>
-					</tr>
-					<tr class="parzysty">
-						<td>„Granice istnieją tylko w naszych umysłach.”</td>
-						<td><input type="text" placeholder="Uwagi..."></td>
-						<td><button class="example-button">Akceptuj</button></td>
-						<td><a href="#Projekt5">Więcej informacji</a></td>
-						<td>
-							<ul style="list-style-type: none;">
-								<li>✓ Sprawdzone</li>
-								<li>✓ Zatwierdzone</li>
-								<li>✓ Zakończone</li>
-							</ul>
-						</td>
-						<td><input type="checkbox"> Zatwierdzam</td>
-					</tr>
-					<tr class="nieparzysty">
-						<td>„Do odważnych świat należy.”</td>
-						<td><input type="text" placeholder="Podziel się opinią..."></td>
-						<td><button class="example-button">Prześlij</button></td>
-						<td><a href="#Projekt5">Link do artykułu</a></td>
-						<td>
-							<ol type="a">
-								<li>Pozycja 1</li>
-								<li>Pozycja 2</li>
-								<li>Pozycja 3</li>
-							</ol>
-						</td>
-						<td><input type="checkbox"> Akceptuję regulamin</td>
-					</tr>
+						<tr class="parzysty">
+							<td class="quote"><p>„Nie popełniaj błędów”</p></td>
+							<td><input type="text" placeholder="Wpisz coś..." data-id="1"></td>
+							<td><button id="1example-button" data-id="1">Kliknij mnie</button></td>
+							<td><a href="#projekt1" class="link" data-id="1">Przejdź do Projekt 1</a></td>
+							<td>
+								<ol class="list" data-id="1">
+									<li>Opcja A</li>
+									<li>Opcja B</li>
+									<li>Opcja C</li>
+								</ol>
+							</td>
+							<td><input type="checkbox" data-id="1"> Akceptuję</td>
+						</tr>
+						<tr class="nieparzysty">
+							<td class="quote"><p>„Człowiek uczy się na błędach, mędrzec uczy się na cudzych.”</p></td>
+							<td><input type="text" placeholder="Twoja odpowiedź..." data-id="2"></td>
+							<td><button id="2example-button" data-id="2">Akcja</button></td>
+							<td><a href="#projekt2" class="link" data-id="2">Przejdź do Projekt 2</a></td>
+							<td>
+								<ul class="list" data-id="2">
+									<li>Element 1</li>
+									<li>Element 2</li>
+									<li>Element 3</li>
+								</ul>
+							</td>
+							<td><input type="checkbox" data-id="2"> Zgadzam się na warunki</td>
+						</tr>
+						<tr class="parzysty">
+							<td class="quote"><p>„Co mnie nie zabije, to mnie udziwni.”</p></td>
+							<td><input type="text" placeholder="Komentarz..." data-id="3"></td>
+							<td><button id="3example-button" data-id="3">Zatwierdź</button></td>
+							<td><a href="#projekt3" class="link" data-id="3">Przejdź do Projekt 3</a></td>
+							<td>
+								<ul class="list" data-id="3">
+									<li>Etap I</li>
+									<li>Etap II</li>
+									<li>Etap III</li>
+								</ul>
+							</td>
+							<td><input type="checkbox" data-id="3"> Potwierdzam</td>
+						</tr>
+						<tr class="nieparzysty">
+							<td class="quote"><p>„Każda droga zaczyna się od pierwszego kroku.”</p></td>
+							<td><input type="text" placeholder="Twoje myśli..." data-id="4"></td>
+							<td><button id="4example-button" data-id="4">Sprawdź</button></td>
+							<td><a href="#projekt4" class="link" data-id="4">Przejdź do Projekt 4</a></td>
+							<td>
+								<ol style="list-style-type: lower-roman;" data-id="4">
+									<li>Krok pierwszy</li>
+									<li>Krok drugi</li>
+									<li>Krok trzeci</li>
+								</ol>
+							</td>
+							<td><input type="checkbox" data-id="4"> Zgadzam się</td>
+						</tr>
+						<tr class="parzysty">
+							<td class="quote"><p>„Granice istnieją tylko w naszych umysłach.”</p></td>
+							<td><input type="text" placeholder="Uwagi..." data-id="5"></td>
+							<td><button id="5example-button" data-id="5">Akceptuj</button></td>
+							<td><a href="#projekt5" class="link" data-id="5">Przejdź do Projekt 5</a></td>
+							<td>
+								<ul style="list-style-type: none;" data-id="5">
+									<li>Sprawdzone</li>
+									<li>Zatwierdzone</li>
+									<li>Zakończone</li>
+								</ul>
+							</td>
+							<td><input type="checkbox" data-id="5"> Zatwierdzam</td>
+						</tr>
+						<tr class="nieparzysty">
+							<td class="quote"><p>„Do odważnych świat należy.”</p></td>
+							<td><input type="text" placeholder="Podziel się opinią..." data-id="6"></td>
+							<td><button id="6example-button" data-id="6">Prześlij</button></td>
+							<td><a href="#projekt6" class="link" data-id="6">Przejdź do Projekt 6</a></td>
+							<td>
+								<ol type="a" data-id="6">
+									<li>Pozycja 1</li>
+									<li>Pozycja 2</li>
+									<li>Pozycja 3</li>
+								</ol>
+							</td>
+							<td><input type="checkbox" data-id="6"> Akceptuję regulamin</td>
+						</tr>
 					</tbody>
 				</table>
-
-
-
 			</div>
 		</div>
 	</section>
@@ -497,8 +493,122 @@
 		<div class="container">
 			<div class="jumbotron">
 				<h1>Projekt 6</h1>
+				<h2>ZADANIE 2. Na kreatywność i umiejętność czytania dokumentacji</h2><br><br>
+<!--				ZADANIE 3 - na kreatywność i umiejętność czytania dokumentacji-->
+				<div id="z3buttonContainer">
+					<button id="z3button1" class="z3button">1. Kursywa i czcionka szeryfowa dla cytatów</button>
+					<button id="z3button2" class="z3button">2. Zwiń / Rozwiń pola Input</button>
+					<button id="z3button3" class="z3button">3. Dodaj kolory do tła tabeli</button>
+					<button id="z3button4" class="z3button">4. Zmien wariant pól tekstowych input</button>
+					<button id="z3button5" class="z3button">5. Wyświetl checkbox zgody na przetwarzanie danych</button>
+					<button id="z3button6" class="z3button">6. Dodanie stylów dla linków</button>
+					<button id="z3button7" class="z3button">7. Pokarz / Ukryj przyciski w tabeli</button>
+					<button id="z3button8" class="z3button">8. Dodaj / Usuń nowy element w wybranych listach</button>
+				</div>
 
-				<p>Miejsce na projekt laboratoryjny</p>
+				<script>
+					const buttonIds = [
+						'z3button1', 'z3button2', 'z3button3', 'z3button4',
+						'z3button5', 'z3button6', 'z3button7', 'z3button8'
+					];
+
+					$('.z3button').click(function(){
+						const buttonId = buttonIds.indexOf($(this).attr('id'));
+						if(!$(this).hasClass('z3buttonPressed')){
+							$(this).addClass('z3buttonPressed');
+							switch (buttonId) {
+								case 0:
+									$('.quote').children('p').addClass('quote-style');
+									break;
+								case 1:
+									$('table tbody').find('td input').slideUp(500);
+									break;
+								case 2:
+									const rows = $('table').find('tbody tr');
+									const middleIndex = Math.floor(rows.length / 2);
+
+									let currentRow = rows.eq(middleIndex);
+									currentRow.addClass('current-row');
+
+									let previousRow = currentRow.prev();
+									while (previousRow.length) {
+										previousRow.addClass('previous-row');
+										previousRow = previousRow.prev();
+									}
+
+									let nextRow = currentRow.next();
+									while (nextRow.length) {
+										nextRow.addClass('next-row');
+										nextRow = nextRow.next();
+									}
+									break;
+								case 3:
+									$('table').find($('input[placeholder]')).each(function() {
+										$(this).addClass('stylized-input');
+									});
+									break;
+								case 4:
+									const newCheckbox = $('<input>', { type: 'checkbox', class: 'new-checkbox', style: 'margin-left: 10px;' });
+									const description = $('<span>', { class: 'new-checkbox-description', text: 'Zgoda na przetwarzanie danych', style: 'margin-left: 5px;' });
+									const checkboxContainer = $('<div>', { class: 'checkbox-container' });
+									checkboxContainer.append(newCheckbox).append(description);
+									$('table').find($('input[type="checkbox"]')).before(checkboxContainer);
+									break;
+								case 5:
+									$('table').find($('a[href^="#projekt"]')).addClass('href-projekt').closest('td').addClass('href-projekt-background');
+									break;
+								case 6:
+									toggleButtonVisibility();
+									break;
+								case 7:
+									$('ol[class*="list"], ul[class*="list"], ol[style*="list"], ul[style*="list"]').each(function() {
+										const newItem = $('<li>').text('Nowy element');
+										$(this).append(newItem);
+									});
+									break;
+							}
+						} else {
+							$(this).removeClass('z3buttonPressed');
+							switch (buttonId) {
+								case 0:
+									$('.quote').children('p').removeClass('quote-style');
+									break;
+								case 1:
+									$('table tbody').find('td input').slideDown(500);
+									break;
+								case 2:
+									const rows = $('table').find('tbody tr');
+									rows.removeClass('previous-row current-row next-row');
+									break;
+								case 3:
+									$('table').find($('input[placeholder]')).each(function() {
+										$(this).removeClass('stylized-input');
+									});
+									break;
+								case 4:
+									$('table').find($('.checkbox-container')).remove();
+									break;
+								case 5:
+									$('table').find($('a[href^="#projekt"]')).removeClass('href-projekt').closest('td').removeClass('href-projekt-background');
+									break;
+								case 6:
+									toggleButtonVisibility();
+									break;
+								case 7:
+									$('ul[class*="list"], ol[class*="list"], ul[style*="list"], ol[style*="list"]').each(function() {
+										$(this).find('li:last').remove();
+									});
+									break;
+							}
+						}
+					});	// click end
+
+					function toggleButtonVisibility() {
+						$('button[id$="example-button"]').each(function() {
+							$(this).fadeToggle(400);
+						});
+					}
+				</script>
 
 			</div>
 		</div>

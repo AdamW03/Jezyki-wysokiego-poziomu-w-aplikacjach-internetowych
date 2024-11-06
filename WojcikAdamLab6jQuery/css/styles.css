@@ -109,3 +109,93 @@
     font-size: 26px;
     letter-spacing: 2px;
 }
+
+/*ZADANIE 3 - na kreatywność i umiejętność czytania dokumentacji*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 20px 0;
+    border: 2px solid #bbbbbb;
+}
+thead td {
+    background-color: #4a5d4d;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+}
+tbody tr {
+    background-color: #e0e5df;
+}
+td {
+    padding: 10px;
+    border: 2px solid #bbbbbb;
+    text-align: center;
+}
+
+#z3buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.z3button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.z3buttonPressed {
+    background-color: #28632a;
+    color: #B0B0B0;
+}
+
+.quote-style {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.previous-row {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient od różowego do pomarańczowego */
+}
+.next-row {
+    background: linear-gradient(to right, #6a11cb, #6cc1fc); /* Gradient od fioletowego do jaśniejszego niebieskiego */
+}
+.current-row {
+    background: linear-gradient(45deg, #fff3b0, #ffcc00); /* Gradient od jasnego żółtego do pomarańczowego */
+}
+
+.stylized-input {
+    background-color: #e0f7fa;
+    font-style: italic;
+    font-size: 1.1em;
+    font-family: "Courier New", monospace;
+}
+
+.href-projekt {
+    color: #fb5d2b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+.href-projekt:hover {
+    color: white;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.href-projekt-background {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+.href-projekt-background:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+}
