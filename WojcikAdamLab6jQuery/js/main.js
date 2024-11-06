@@ -1,3 +1,4 @@
+// ZADANIE 1. Podstawy jQuery
 $(document).ready(function(){
     $('span.pq').each(function(){
         const quote=$(this).clone();

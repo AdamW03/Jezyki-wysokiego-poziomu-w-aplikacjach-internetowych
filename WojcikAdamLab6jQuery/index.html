@@ -55,6 +55,11 @@
 					</a></li>
 					<li><a href="#projekt1">Projekt 1</a></li>
 					<li><a href="#projekt2">Projekt 2</a></li>
+					<li><a href="#projekt3">Projekt 3</a></li>
+					<li><a href="#projekt4">Projekt 4</a></li>
+					<li><a href="#projekt4">Projekt 5</a></li>
+					<li><a href="#projekt4">Projekt 6</a></li>
+					<li><a href="#projekt4">Projekt 7</a></li>
 					<li><a href="#form" data-toggle="modal"
 						data-target="#ModalForm">Kontakt</a></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -141,7 +146,7 @@
 		<div class="container">
 			<div class="jumbotron">
 				<h1>Projekt 1</h1>
-				<h2>ZADANIE 1.</h2><br>
+				<h2>ZADANIE 1. Podstawy jQuery</h2><br>
 
 <!--				1. Selektory jQuery-->
 <!--				<p id="message">Komunikat specjalny</p>-->
@@ -200,14 +205,211 @@
 		</div>
 	</section>
 
-
 	<section id="projekt2">
 		<div class="container">
 			<div class="jumbotron">
 				<h1>Projekt 2</h1>
-				
+			</div>
+		</div>
+	</section>
+
+	<section id="projekt3">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 3</h1>
+				<h2>ZADANIE 2. Zdarzenia</h2><br>
+<!--				ZADANIE 2. Zdarzenia-->
+
+<!--				2.2-->
+				<h3>Stworzenie świata</h3>
+				<h3>Jacek Kaczmarski</h3>
+
+				<a href="#" class="link" id="link1">Akapit 1</a>
+				<a href="#" class="link" id="link2">Akapit 2</a>
+				<a href="#" class="link" id="link3">Akapit 3</a>
+				<a href="#" class="link" id="link4">Akapit 4</a>
+				<a href="#" class="link" id="link5">Akapit 5</a>
+				<a href="#" class="link" id="link6">Akapit 6</a>
+				<a href="#" class="link" id="link7">Akapit 7</a><br><br>
+
+				<div class="main"></div>
+
+				<script>
+					// 2.1
+					$(document).dblclick(function() {
+						alert("Kliknięto dwukrotnie.");
+					});	// dblclick end
+
+
+					// 2.2
+					const paragraph1 = "<p>Stworzenie świata nie przychodzi łatwo...</p>";
+					const paragraph2 = "<p>W działaniu trzeba poznać kolej rzeczy...</p>";
+					const paragraph3 = "<p>W tworzeniu szkodzi marzeń niecierpliwość...</p>";
+					const paragraph4 = "<p>Panować światu to sekrety mnożyć...</p>";
+					const paragraph5 = "<p>Przepych określa panowania zasięg...</p>";
+					const paragraph6 = "<p>I nie ma władzy bez czci i pokory...</p>";
+					const paragraph7 = "<p>Oto porządek nie do zastąpienia<br>" +
+							"Wszelkie istnienie żyje swoim torem<br>" +
+							"Człowiek panuje wszelkiemu istnieniu<br>" +
+							"Władzę nad sobą uznając z pokorą<br>" +
+							"Siódmego dnia siódmego dnia<br>" +
+							"Ogarnął wszechświat jasny żar południa<br>" +
+							"Stworzywszy w tydzień rajski świat<br>" +
+							"Odpoczywałem przez cały dzień siódmy</p>";
+
+					$('.link').hover(function(){
+						$('.main p').remove();
+
+						switch ($(this).attr('id')) {
+							case "link1":
+								$('.main').append(paragraph1);
+								break;
+							case "link2":
+								$('.main').append(paragraph2);
+								break;
+							case "link3":
+								$('.main').append(paragraph3);
+								break;
+							case "link4":
+								$('.main').append(paragraph4);
+								break;
+							case "link5":
+								$('.main').append(paragraph5);
+								break;
+							case "link6":
+								$('.main').append(paragraph6);
+								break;
+							case "link7":
+								$('.main').append(paragraph7);
+								break;
+						}
+					});	// hover end
+				</script>
+			</div>
+		</div>
+	</section>
+
+	<section id="projekt4">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 4</h1>
+<!--				2.3-->
+				<form>
+					<button type="button" id="button2_3">kliknij mnie</button>
+<!--					2.4-->
+					<h3>Wybierz styl:</h3><br>
+					<button type="button" class="change-style" id="button1">1</button>
+					<button type="button" class="change-style" id="button2">2</button>
+					<button type="button" class="change-style" id="button3">3</button>
+					<button type="button" class="change-style" id="button4">4</button>
+					<button type="button" class="change-style" id="button5">5</button>
+					<button type="button" class="change-style" id="button6">6</button>
+					<button type="button" class="change-style" id="button7">7</button>
+					<button type="button" class="change-style" id="button8">8</button>
+					<button type="button" class="change-style" id="button9">9</button>
+					<button type="button" class="change-style" id="button10">10</button>
+				</form>
+
+				<div class="main"></div>
+
+				<script>
+					// 2.3
+					$('#button2_3').click(function(){
+						$(this).text("zostałem kliknięty!");
+					});	// click end
+
+					// 2.4
+					$('.change-style').click(function(){
+						let buttonId = $(this).attr('id').replace('button', '');
+
+						const target = $('p');
+
+						let butClass;
+
+						const styles = [
+							"style1",
+							"style2",
+							"style3",
+							"style4",
+							"style5",
+							"style6",
+							"style7",
+							"style8",
+							"style9",
+							"style10"
+						];
+
+						const changeStyles = [
+							"<p>Styl 1: Zmieniono kolor tekstu na #f2b1d1, czcionkę na Arial, rozmiar czcionki na 16px, oraz tło na #333.</p>",
+							"<p>Styl 2: Zmieniono kolor tekstu na czarny, czcionkę na Courier New, rozmiar czcionki na 18px, oraz dodano odstęp między literami (letter-spacing) na 1px.</p>",
+							"<p>Styl 3: Zmieniono kolor tekstu na #ffe600, czcionkę na Georgia, rozmiar czcionki na 20px, oraz ustawiono tekst na wielkie litery (uppercase).</p>",
+							"<p>Styl 4: Zmieniono kolor tekstu na #ff6b6b, czcionkę na Verdana, rozmiar czcionki na 18px, oraz pogrubiono tekst (font-weight: bold).</p>",
+							"<p>Styl 5: Zmieniono kolor tekstu na #78c2ad, czcionkę na Tahoma, rozmiar czcionki na 14px, oraz dodano podkreślenie (text-decoration: underline).</p>",
+							"<p>Styl 6: Zmieniono kolor tekstu na #a1e3d8, czcionkę na Times New Roman, rozmiar czcionki na 24px, oraz zastosowano kursywę (font-style: italic).</p>",
+							"<p>Styl 7: Zmieniono kolor tekstu na #ff6347, czcionkę na Comic Sans MS, rozmiar czcionki na 28px, oraz dodano przekreślenie (text-decoration: line-through).</p>",
+							"<p>Styl 8: Zmieniono kolor tekstu na #9d9d9d, czcionkę na Lucida Console, rozmiar czcionki na 16px, oraz zastosowano lekkie pogrubienie (font-weight: lighter).</p>",
+							"<p>Styl 9: Zmieniono kolor tekstu na #ffadad, czcionkę na Trebuchet MS, rozmiar czcionki na 30px, oraz wyśrodkowano tekst (text-align: center).</p>",
+							"<p>Styl 10: Zmieniono kolor tekstu na #222, czcionkę na Impact, rozmiar czcionki na 26px, oraz dodano odstęp między literami (letter-spacing) na 2px.</p>"
+						];
+
+
+						butClass = styles[buttonId-1];
+
+						$('.change-style').each(function(){
+							if($(this).text() === buttonId){
+								$(this).text(buttonId + ". kliknięty");
+							} else {
+								$(this).text($(this).attr('id').replace('button', ''));
+							}
+						});	// change-style each end
+
+						$('.main p').remove();
+						$('.main').append("<p><br><br>Zmodyfikowano tag " + target.prop('nodeName') + ".<br>Dokonano zmian: </p>" + changeStyles[buttonId - 1]);
+
+						target.each(function() {
+							const currentElement = $(this);
+							styles.forEach(function(style) {
+								currentElement.removeClass(style);
+							});	// styles forEach end
+							$(this).addClass(butClass);
+						}); // target each end
+					});	// click end
+				</script>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section id="projekt5">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 5</h1>
+
 				<p>Miejsce na projekt laboratoryjny</p>
-				
+
+			</div>
+		</div>
+	</section>
+
+	<section id="projekt6">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 6</h1>
+
+				<p>Miejsce na projekt laboratoryjny</p>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="projekt7">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 7</h1>
+
+				<p>Miejsce na projekt laboratoryjny</p>
+
 			</div>
 		</div>
 	</section>
