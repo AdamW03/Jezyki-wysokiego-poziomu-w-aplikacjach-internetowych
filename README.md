@@ -14,3 +14,4 @@ Adam Wójcik 20500
 ## Laboratorium 5
 
 ## Laboratorium 6
+https://adamw03.github.io/Jezyki-wysokiego-poziomu-w-aplikacjach-internetowych/WojcikAdamLab6jQuery/index.html
