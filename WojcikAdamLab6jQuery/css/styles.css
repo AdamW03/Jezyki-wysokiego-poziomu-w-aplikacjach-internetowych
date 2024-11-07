@@ -136,13 +136,23 @@ td {
     text-align: center;
 }
 
-#z3buttonContainer {
+.z3buttonContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
 }
 .z3button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.z3buttonv2 {
     padding: 10px 20px;
     font-size: 18px;
     background-color: #4CAF50;
@@ -198,4 +208,34 @@ td {
 }
 .href-projekt-background:hover {
     background: linear-gradient(135deg, #feb47b, #ff7e5f);
+}
+
+.grad-background {
+    background: linear-gradient(to right, #D3A6FF, #A8D8A8)
+}
+
+.odd-background {
+    background-color: #ffcc00;
+    font-weight: bold;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.no-link-text {
+    color: rgba(139, 0, 0, 0.37);
+}
+
+.fine-style {
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+}
+
+.highlight-text {
+    background-color: rgba(255, 174, 0, 0.81);
+    font-weight: bold;
+    color: #5e0303;
 }

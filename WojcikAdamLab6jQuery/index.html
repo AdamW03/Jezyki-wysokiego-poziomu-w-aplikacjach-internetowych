@@ -399,7 +399,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr class="parzysty">
+						<tr class="parzysty marked">
 							<td class="quote"><p>„Nie popełniaj błędów”</p></td>
 							<td><input type="text" placeholder="Wpisz coś..." data-id="1"></td>
 							<td><button id="1example-button" data-id="1">Kliknij mnie</button></td>
@@ -413,7 +413,7 @@
 							</td>
 							<td><input type="checkbox" data-id="1"> Akceptuję</td>
 						</tr>
-						<tr class="nieparzysty">
+						<tr class="nieparzysty marked">
 							<td class="quote"><p>„Człowiek uczy się na błędach, mędrzec uczy się na cudzych.”</p></td>
 							<td><input type="text" placeholder="Twoja odpowiedź..." data-id="2"></td>
 							<td><button id="2example-button" data-id="2">Akcja</button></td>
@@ -441,7 +441,7 @@
 							</td>
 							<td><input type="checkbox" data-id="3"> Potwierdzam</td>
 						</tr>
-						<tr class="nieparzysty">
+						<tr class="nieparzysty marked">
 							<td class="quote"><p>„Każda droga zaczyna się od pierwszego kroku.”</p></td>
 							<td><input type="text" placeholder="Twoje myśli..." data-id="4"></td>
 							<td><button id="4example-button" data-id="4">Sprawdź</button></td>
@@ -495,7 +495,7 @@
 				<h1>Projekt 6</h1>
 				<h2>ZADANIE 2. Na kreatywność i umiejętność czytania dokumentacji</h2><br><br>
 <!--				ZADANIE 3 - na kreatywność i umiejętność czytania dokumentacji-->
-				<div id="z3buttonContainer">
+				<div class="z3buttonContainer">
 					<button id="z3button1" class="z3button">1. Kursywa i czcionka szeryfowa dla cytatów</button>
 					<button id="z3button2" class="z3button">2. Zwiń / Rozwiń pola Input</button>
 					<button id="z3button3" class="z3button">3. Dodaj kolory do tła tabeli</button>
@@ -618,8 +618,92 @@
 		<div class="container">
 			<div class="jumbotron">
 				<h1>Projekt 7</h1>
+				<h2>ZADANIE 2. Na kreatywność i umiejętność czytania dokumentacji</h2><br><br>
+<!--				ZADANIE 3 - na kreatywność i umiejętność czytania dokumentacji-->
+				<div class="z3buttonContainer">
+					<button id="z3button1v2" class="z3buttonv2">1. Gradientowe tło dla parzystych wierszy</button>
+					<button id="z3button2v2" class="z3buttonv2">2. Żółte tło i pogrubiona czcianka dla neiparzystych wierszy</button>
+					<button id="z3button3v2" class="z3buttonv2">3. Ukrycie / Pokazanie ozaczonych za pomocą klasy nieparzystych wierszy</button>
+					<button id="z3button4v2" class="z3buttonv2">4. Ukryj / Pokaż pierwszą i ostatnią kolumnę tabeli</button>
+					<button id="z3button5v2" class="z3buttonv2">5. Zmiana koloru czcionki dla tekstów niebędocych linkami</button>
+					<button id="z3button6v2" class="z3buttonv2">6. Styl dla komórek z elemetami typu input</button>
+					<button id="z3button7v2" class="z3buttonv2">7. Dodanie stylu zakeślenia do znaczników p zawierających kropki</button>
+					<button id="z3button8v2" class="z3buttonv2">8. Ukrycie / Ponowne wyświetlenie przycisków</button>
+				</div>
 
-				<p>Miejsce na projekt laboratoryjny</p>
+				<script>
+					const buttonv2Ids = [
+						'z3button1v2', 'z3button2v2', 'z3button3v2', 'z3button4v2',
+						'z3button5v2', 'z3button6v2', 'z3button7v2', 'z3button8v2'
+					];
+
+					$('.z3buttonv2').click(function(){
+						const buttonv2Id = buttonv2Ids.indexOf($(this).attr('id'));
+						if(!$(this).hasClass('z3buttonPressed')){
+							$(this).addClass('z3buttonPressed');
+							switch (buttonv2Id) {
+								case 0:
+									$('table tbody tr:even').addClass('grad-background');
+									break;
+								case 1:
+									$('table tbody tr:odd').addClass('odd-background');
+									break;
+								case 2:
+									$('table tbody tr.marked:even').fadeToggle(700);
+									break;
+								case 3:
+									$('table tr').each(function() {
+										$(this).find('td:first').slideUp(300);
+										$(this).find('td:last').slideUp(300);
+									});
+									break;
+								case 4:
+									$('table td:not(:has(a))').addClass('no-link-text');
+									break;
+								case 5:
+									$('table tbody td:has(input)').addClass('fine-style');
+									break;
+								case 6:
+									$('table tbody p:contains(".")').addClass('highlight-text');
+									break;
+								case 7:
+									$('button[id$="example-button"]').hide();
+									break;
+							}
+						} else {
+							$(this).removeClass('z3buttonPressed');
+							switch (buttonv2Id) {
+								case 0:
+									$('table tbody tr:even').removeClass('grad-background');
+									break;
+								case 1:
+									$('table tbody tr:odd').removeClass('odd-background');
+									break;
+								case 2:
+									$('table tbody tr.marked:even').fadeToggle(700);
+									break;
+								case 3:
+									$('table tr').each(function() {
+										$(this).find('td:first').slideDown(300);
+										$(this).find('td:last').slideDown(300);
+									});
+									break;
+								case 4:
+									$('table td:not(:has(a))').removeClass('no-link-text');
+									break;
+								case 5:
+									$('table tbody td:has(input)').removeClass('fine-style');
+									break;
+								case 6:
+									$('table tbody p:contains(".")').removeClass('highlight-text');
+									break;
+								case 7:
+									$('button[id$="example-button"]').show();
+									break;
+							}
+						}
+					});	// click end
+				</script>
 
 			</div>
 		</div>
@@ -726,7 +810,7 @@
 								<br>
 								<div class="row">
 									<div class="col-md-2" align="right">
-										<label for="information">Informacje</label>
+										<label for="Info">Informacje</label>
 									</div>
 									<div class="col-md-4">
 										<textarea name="Informacje" cols="30" rows="7" id="Info"
