@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ReUseComponent from "./components/ReUseComponent";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ReUseComponent title="Pierwszy komponent" content="To jest pierwszy komponent.">
+        <button>Przycisk</button>
+      </ReUseComponent>
+
+      <ReUseComponent title="Drugi komponent" content="To jest drugi komponent.">
+        <ul>
+          <li>Element 1</li>
+          <li>Element 2</li>
+          <li>Element 3</li>
+        </ul>
+      </ReUseComponent>
+
+      <ReUseComponent title="Trzeci komponent" content="To jest trzeci komponent.">
+        <p>Inna zawartość tutaj.</p>
+      </ReUseComponent>
     </div>
   );
 }
