@@ -15,3 +15,6 @@ Adam Wójcik 20500
 
 ## Laboratorium 6
 https://adamw03.github.io/Jezyki-wysokiego-poziomu-w-aplikacjach-internetowych/WojcikAdamLab6jQuery/index.html
+
+## Laboratorium 7
+https://adamw03.github.io/Jezyki-wysokiego-poziomu-w-aplikacjach-internetowych/WojcikAdamLab7React/wojcikadamlab7react/index.html
