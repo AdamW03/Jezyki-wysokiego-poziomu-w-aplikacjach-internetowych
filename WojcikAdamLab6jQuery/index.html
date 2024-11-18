@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Programowanie w JAVASCRIPT - template">
+<meta name="author" content="dr inż. Jacek Paluszak">
+<link rel="icon" href="img/favicon.ico">
+
+<title>Programowanie w JAVASCRIPT</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<link href="css/navbar-fixed-top.css" rel="stylesheet">
+<script src="js/ie-emulation-modes-warning.js"></script>
+
+<!-- jQuery  -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+<script src="js/jquery.easing.1.3.min.js"></script>
+<script src="js/jquery.easing.compatibility.js"></script>
+
+<!-- Import pliku main.js -->
+<script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+	<!-- navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="img/logo512x128.png"
+					height="40" alt=""></a> <a class="navbar-brand logotext" href="#">Laboratorium</a>
+			</div>
+
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#main-page"
+						class="btn btn-primary" title="Strona główna"> <span
+							class="glyphicon glyphicon-home"></span>
+					</a></li>
+					<li><a href="#projekt1">Projekt 1</a></li>
+					<li><a href="#projekt2">Projekt 2</a></li>
+					<li><a href="#projekt3">Projekt 3</a></li>
+					<li><a href="#projekt4">Projekt 4</a></li>
+					<li><a href="#projekt4">Projekt 5</a></li>
+					<li><a href="#projekt4">Projekt 6</a></li>
+					<li><a href="#projekt4">Projekt 7</a></li>
+					<li><a href="#form" data-toggle="modal"
+						data-target="#ModalForm">Kontakt</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">Opcje <span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Akcja 1</a></li>
+							<li><a href="#">Akcja 2</a></li>
+							<li><a href="#">Akcja 3</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown-header">Linki</li>
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+						</ul></li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+
+	</nav>
+
+	<!-- Main container -->
+	<section id="main-page">
+		<div class="container">
+
+			<div class="jumbotron">
+				<h1>Języki wysokiego poziomu <br> w aplikacjach internetowych</h1>
+				<div class="row">
+					<div class="col-md-2" align="left">
+						<p>nazwisko:</p>
+					</div>
+					<div class="col-md-4">
+						<p id = "surname">Kowalski</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2" align="left">
+						<p>imię:</p>
+					</div>
+					<div class="col-md-4">
+						<p id = "name">Jan</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2" align="left">
+						<p>grupa:</p>
+					</div>
+					<div class="col-md-4">
+						<p id = "group">1</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2" align="left">
+						<p>email:</p>
+					</div>
+					<div class="col-md-4">
+						<p id = "email">999@student.ans-elblag.pl</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2" align="left">
+						<p>nr indeksu:</p>
+					</div>
+					<div class="col-md-4">
+						<p id = "index">999</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<script>
+			document.getElementById("surname").innerHTML = "Wójcik";
+			document.getElementById("name").innerHTML = "Adam";
+			document.getElementById("group").innerHTML = "1";
+			document.getElementById("email").innerHTML = "20500@student.ans-elblag.pl";
+			document.getElementById("index").innerHTML = "20500";
+		</script>
+	</section>
+	<!-- /container -->
+
+	<section id="projekt1">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 1</h1>
+				<h2>ZADANIE 1. Podstawy jQuery</h2><br>
+
+<!--				1. Selektory jQuery-->
+<!--				<p id="message">Komunikat specjalny</p>-->
+
+<!--				<script>-->
+<!--					// 1.1. Identyfikatory-->
+<!--					// const messagePara = document.getElementById("message");-->
+<!--					const messagePara = $('#message');-->
+
+<!--					// 1.2. Elementy-->
+<!--					// const linksList = document.getElementsByTagName('a');-->
+<!--					const linksList = $('a');-->
+
+<!--					// 1.3. Klasy-->
+<!--					// $('.navbar').hide();-->
+<!--				</script>-->
+
+<!--				ZADANIE 1. Podstawy jQuery-->
+
+				<h2>Rozbite oddziały</h2>
+				<h3>Jacek Kaczmarski</h3><br>
+				<p>
+					<span class="pq">Po klęsce nie pierwszej podnosząc przyłbice</span><br>
+					<span class="pq">Przechodzą jak we śnie ostatnie granice</span>
+				</p>
+				<p>
+					Przez cło przemycają swój okrzyk bojowy<br>
+					i kulę ostatnią co w ustach się schowa<br>
+					Przy stołach współczucia nurzają się w winie<br>
+					i obcym śpiewają o Tej co nie zginie
+				</p>
+				<p>
+					Swą krew ocaloną oddają za darmo<br>
+					<span class="pq">każdemu kto zechce połączyć ich z armią</span><br>
+					Farbują mundury, wędrują przez kraje<br>
+					i czasem strzelają do siebie nawzajem
+				</p>
+				<p>
+					Pod każdym sztandarem byle nie białym<br>
+					szukają zwycięstwa rozbite oddziały<br>
+					<span class="pq">Przychodzą po zmierzchu do kobiet im obcych</span><br>
+					a tam kędy przejdą urodzą się chłopcy
+				</p>
+				<p>
+					Gdy wrócą przygnani kolejną zawieją,<br>
+					<span class="pq">zobaczą że synów swych nie rozumieją</span><br>
+					Spisują więc dla nich noc w noc pamiętniki<br>
+					nieprzetłumaczalne na obce języki
+				</p>
+				<p>
+					<span class="pq">I cierpią gdy śmieje się z nich świat zwycięski</span><br>
+					Niepomni że mądry nie śmieje się z klęski
+				</p>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="projekt2">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 2</h1>
+			</div>
+		</div>
+	</section>
+
+	<section id="projekt3">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 3</h1>
+				<h2>ZADANIE 2. Zdarzenia</h2><br>
+<!--				ZADANIE 2. Zdarzenia-->
+
+<!--				2.2-->
+				<h3>Stworzenie świata</h3>
+				<h3>Jacek Kaczmarski</h3>
+
+				<a href="#" class="link" id="link1">Akapit 1</a>
+				<a href="#" class="link" id="link2">Akapit 2</a>
+				<a href="#" class="link" id="link3">Akapit 3</a>
+				<a href="#" class="link" id="link4">Akapit 4</a>
+				<a href="#" class="link" id="link5">Akapit 5</a>
+				<a href="#" class="link" id="link6">Akapit 6</a>
+				<a href="#" class="link" id="link7">Akapit 7</a><br><br>
+
+				<div class="main"></div>
+
+				<script>
+					// 2.1
+					$(document).dblclick(function() {
+						alert("Kliknięto dwukrotnie.");
+					});	// dblclick end
+
+
+					// 2.2
+					const paragraph1 = "<p>Stworzenie świata nie przychodzi łatwo...</p>";
+					const paragraph2 = "<p>W działaniu trzeba poznać kolej rzeczy...</p>";
+					const paragraph3 = "<p>W tworzeniu szkodzi marzeń niecierpliwość...</p>";
+					const paragraph4 = "<p>Panować światu to sekrety mnożyć...</p>";
+					const paragraph5 = "<p>Przepych określa panowania zasięg...</p>";
+					const paragraph6 = "<p>I nie ma władzy bez czci i pokory...</p>";
+					const paragraph7 = "<p>Oto porządek nie do zastąpienia<br>" +
+							"Wszelkie istnienie żyje swoim torem<br>" +
+							"Człowiek panuje wszelkiemu istnieniu<br>" +
+							"Władzę nad sobą uznając z pokorą<br>" +
+							"Siódmego dnia siódmego dnia<br>" +
+							"Ogarnął wszechświat jasny żar południa<br>" +
+							"Stworzywszy w tydzień rajski świat<br>" +
+							"Odpoczywałem przez cały dzień siódmy</p>";
+
+					$('.link').hover(function(){
+						$('.main p').remove();
+
+						switch ($(this).attr('id')) {
+							case "link1":
+								$('.main').append(paragraph1);
+								break;
+							case "link2":
+								$('.main').append(paragraph2);
+								break;
+							case "link3":
+								$('.main').append(paragraph3);
+								break;
+							case "link4":
+								$('.main').append(paragraph4);
+								break;
+							case "link5":
+								$('.main').append(paragraph5);
+								break;
+							case "link6":
+								$('.main').append(paragraph6);
+								break;
+							case "link7":
+								$('.main').append(paragraph7);
+								break;
+						}
+					});	// hover end
+				</script>
+			</div>
+		</div>
+	</section>
+
+	<section id="projekt4">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 4</h1>
+<!--				2.3-->
+				<form>
+					<button type="button" id="button2_3">kliknij mnie</button>
+<!--					2.4-->
+					<h3>Wybierz styl:</h3><br>
+					<button type="button" class="change-style" id="button1">1</button>
+					<button type="button" class="change-style" id="button2">2</button>
+					<button type="button" class="change-style" id="button3">3</button>
+					<button type="button" class="change-style" id="button4">4</button>
+					<button type="button" class="change-style" id="button5">5</button>
+					<button type="button" class="change-style" id="button6">6</button>
+					<button type="button" class="change-style" id="button7">7</button>
+					<button type="button" class="change-style" id="button8">8</button>
+					<button type="button" class="change-style" id="button9">9</button>
+					<button type="button" class="change-style" id="button10">10</button>
+				</form>
+
+				<div class="main"></div>
+
+				<script>
+					// 2.3
+					$('#button2_3').click(function(){
+						$(this).text("zostałem kliknięty!");
+					});	// click end
+
+					// 2.4
+					$('.change-style').click(function(){
+						let buttonId = $(this).attr('id').replace('button', '');
+
+						const target = $('p');
+
+						let butClass;
+
+						const styles = [
+							"style1",
+							"style2",
+							"style3",
+							"style4",
+							"style5",
+							"style6",
+							"style7",
+							"style8",
+							"style9",
+							"style10"
+						];
+
+						const changeStyles = [
+							"<p>Styl 1: Zmieniono kolor tekstu na #f2b1d1, czcionkę na Arial, rozmiar czcionki na 16px, oraz tło na #333.</p>",
+							"<p>Styl 2: Zmieniono kolor tekstu na czarny, czcionkę na Courier New, rozmiar czcionki na 18px, oraz dodano odstęp między literami (letter-spacing) na 1px.</p>",
+							"<p>Styl 3: Zmieniono kolor tekstu na #ffe600, czcionkę na Georgia, rozmiar czcionki na 20px, oraz ustawiono tekst na wielkie litery (uppercase).</p>",
+							"<p>Styl 4: Zmieniono kolor tekstu na #ff6b6b, czcionkę na Verdana, rozmiar czcionki na 18px, oraz pogrubiono tekst (font-weight: bold).</p>",
+							"<p>Styl 5: Zmieniono kolor tekstu na #78c2ad, czcionkę na Tahoma, rozmiar czcionki na 14px, oraz dodano podkreślenie (text-decoration: underline).</p>",
+							"<p>Styl 6: Zmieniono kolor tekstu na #a1e3d8, czcionkę na Times New Roman, rozmiar czcionki na 24px, oraz zastosowano kursywę (font-style: italic).</p>",
+							"<p>Styl 7: Zmieniono kolor tekstu na #ff6347, czcionkę na Comic Sans MS, rozmiar czcionki na 28px, oraz dodano przekreślenie (text-decoration: line-through).</p>",
+							"<p>Styl 8: Zmieniono kolor tekstu na #9d9d9d, czcionkę na Lucida Console, rozmiar czcionki na 16px, oraz zastosowano lekkie pogrubienie (font-weight: lighter).</p>",
+							"<p>Styl 9: Zmieniono kolor tekstu na #ffadad, czcionkę na Trebuchet MS, rozmiar czcionki na 30px, oraz wyśrodkowano tekst (text-align: center).</p>",
+							"<p>Styl 10: Zmieniono kolor tekstu na #222, czcionkę na Impact, rozmiar czcionki na 26px, oraz dodano odstęp między literami (letter-spacing) na 2px.</p>"
+						];
+
+
+						butClass = styles[buttonId-1];
+
+						$('.change-style').each(function(){
+							if($(this).text() === buttonId){
+								$(this).text(buttonId + ". kliknięty");
+							} else {
+								$(this).text($(this).attr('id').replace('button', ''));
+							}
+						});	// change-style each end
+
+						$('.main p').remove();
+						$('.main').append("<p><br><br>Zmodyfikowano tag " + target.prop('nodeName') + ".<br>Dokonano zmian: </p>" + changeStyles[buttonId - 1]);
+
+						target.each(function() {
+							const currentElement = $(this);
+							styles.forEach(function(style) {
+								currentElement.removeClass(style);
+							});	// styles forEach end
+							$(this).addClass(butClass);
+						}); // target each end
+					});	// click end
+				</script>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section id="projekt5">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 5</h1>
+				<h2>ZADANIE 2. Na kreatywność i umiejętność czytania dokumentacji</h2><br>
+<!--				ZADANIE 3 - na kreatywność i umiejętność czytania dokumentacji-->
+				<table>
+					<thead>
+						<tr>
+							<td>Cytat</td>
+							<td>Input</td>
+							<td>Przycisk</td>
+							<td>Link</td>
+							<td>Lista</td>
+							<td>Checkbox</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="parzysty marked">
+							<td class="quote"><p>„Nie popełniaj błędów”</p></td>
+							<td><input type="text" placeholder="Wpisz coś..." data-id="1"></td>
+							<td><button id="1example-button" data-id="1">Kliknij mnie</button></td>
+							<td><a href="#projekt1" class="link" data-id="1">Przejdź do Projekt 1</a></td>
+							<td>
+								<ol class="list" data-id="1">
+									<li>Opcja A</li>
+									<li>Opcja B</li>
+									<li>Opcja C</li>
+								</ol>
+							</td>
+							<td><input type="checkbox" data-id="1"> Akceptuję</td>
+						</tr>
+						<tr class="nieparzysty marked">
+							<td class="quote"><p>„Człowiek uczy się na błędach, mędrzec uczy się na cudzych.”</p></td>
+							<td><input type="text" placeholder="Twoja odpowiedź..." data-id="2"></td>
+							<td><button id="2example-button" data-id="2">Akcja</button></td>
+							<td><a href="#projekt2" class="link" data-id="2">Przejdź do Projekt 2</a></td>
+							<td>
+								<ul class="list" data-id="2">
+									<li>Element 1</li>
+									<li>Element 2</li>
+									<li>Element 3</li>
+								</ul>
+							</td>
+							<td><input type="checkbox" data-id="2"> Zgadzam się na warunki</td>
+						</tr>
+						<tr class="parzysty">
+							<td class="quote"><p>„Co mnie nie zabije, to mnie udziwni.”</p></td>
+							<td><input type="text" placeholder="Komentarz..." data-id="3"></td>
+							<td><button id="3example-button" data-id="3">Zatwierdź</button></td>
+							<td><a href="#projekt3" class="link" data-id="3">Przejdź do Projekt 3</a></td>
+							<td>
+								<ul class="list" data-id="3">
+									<li>Etap I</li>
+									<li>Etap II</li>
+									<li>Etap III</li>
+								</ul>
+							</td>
+							<td><input type="checkbox" data-id="3"> Potwierdzam</td>
+						</tr>
+						<tr class="nieparzysty marked">
+							<td class="quote"><p>„Każda droga zaczyna się od pierwszego kroku.”</p></td>
+							<td><input type="text" placeholder="Twoje myśli..." data-id="4"></td>
+							<td><button id="4example-button" data-id="4">Sprawdź</button></td>
+							<td><a href="#projekt4" class="link" data-id="4">Przejdź do Projekt 4</a></td>
+							<td>
+								<ol style="list-style-type: lower-roman;" data-id="4">
+									<li>Krok pierwszy</li>
+									<li>Krok drugi</li>
+									<li>Krok trzeci</li>
+								</ol>
+							</td>
+							<td><input type="checkbox" data-id="4"> Zgadzam się</td>
+						</tr>
+						<tr class="parzysty">
+							<td class="quote"><p>„Granice istnieją tylko w naszych umysłach.”</p></td>
+							<td><input type="text" placeholder="Uwagi..." data-id="5"></td>
+							<td><button id="5example-button" data-id="5">Akceptuj</button></td>
+							<td><a href="#projekt5" class="link" data-id="5">Przejdź do Projekt 5</a></td>
+							<td>
+								<ul style="list-style-type: none;" data-id="5">
+									<li>Sprawdzone</li>
+									<li>Zatwierdzone</li>
+									<li>Zakończone</li>
+								</ul>
+							</td>
+							<td><input type="checkbox" data-id="5"> Zatwierdzam</td>
+						</tr>
+						<tr class="nieparzysty">
+							<td class="quote"><p>„Do odważnych świat należy.”</p></td>
+							<td><input type="text" placeholder="Podziel się opinią..." data-id="6"></td>
+							<td><button id="6example-button" data-id="6">Prześlij</button></td>
+							<td><a href="#projekt6" class="link" data-id="6">Przejdź do Projekt 6</a></td>
+							<td>
+								<ol type="a" data-id="6">
+									<li>Pozycja 1</li>
+									<li>Pozycja 2</li>
+									<li>Pozycja 3</li>
+								</ol>
+							</td>
+							<td><input type="checkbox" data-id="6"> Akceptuję regulamin</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section id="projekt6">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 6</h1>
+				<h2>ZADANIE 2. Na kreatywność i umiejętność czytania dokumentacji</h2><br><br>
+<!--				ZADANIE 3 - na kreatywność i umiejętność czytania dokumentacji-->
+				<div class="z3buttonContainer">
+					<button id="z3button1" class="z3button">1. Kursywa i czcionka szeryfowa dla cytatów</button>
+					<button id="z3button2" class="z3button">2. Zwiń / Rozwiń pola Input</button>
+					<button id="z3button3" class="z3button">3. Dodaj kolory do tła tabeli</button>
+					<button id="z3button4" class="z3button">4. Zmien wariant pól tekstowych input</button>
+					<button id="z3button5" class="z3button">5. Wyświetl checkbox zgody na przetwarzanie danych</button>
+					<button id="z3button6" class="z3button">6. Dodanie stylów dla linków</button>
+					<button id="z3button7" class="z3button">7. Pokarz / Ukryj przyciski w tabeli</button>
+					<button id="z3button8" class="z3button">8. Dodaj / Usuń nowy element w wybranych listach</button>
+				</div>
+
+				<script>
+					const buttonIds = [
+						'z3button1', 'z3button2', 'z3button3', 'z3button4',
+						'z3button5', 'z3button6', 'z3button7', 'z3button8'
+					];
+
+					$('.z3button').click(function(){
+						const buttonId = buttonIds.indexOf($(this).attr('id'));
+						if(!$(this).hasClass('z3buttonPressed')){
+							$(this).addClass('z3buttonPressed');
+							switch (buttonId) {
+								case 0:
+									$('.quote').children('p').addClass('quote-style');
+									break;
+								case 1:
+									$('table tbody').find('td input').slideUp(500);
+									break;
+								case 2:
+									const rows = $('table').find('tbody tr');
+									const middleIndex = Math.floor(rows.length / 2);
+
+									let currentRow = rows.eq(middleIndex);
+									currentRow.addClass('current-row');
+
+									let previousRow = currentRow.prev();
+									while (previousRow.length) {
+										previousRow.addClass('previous-row');
+										previousRow = previousRow.prev();
+									}
+
+									let nextRow = currentRow.next();
+									while (nextRow.length) {
+										nextRow.addClass('next-row');
+										nextRow = nextRow.next();
+									}
+									break;
+								case 3:
+									$('table').find($('input[placeholder]')).each(function() {
+										$(this).addClass('stylized-input');
+									});
+									break;
+								case 4:
+									const newCheckbox = $('<input>', { type: 'checkbox', class: 'new-checkbox', style: 'margin-left: 10px;' });
+									const description = $('<span>', { class: 'new-checkbox-description', text: 'Zgoda na przetwarzanie danych', style: 'margin-left: 5px;' });
+									const checkboxContainer = $('<div>', { class: 'checkbox-container' });
+									checkboxContainer.append(newCheckbox).append(description);
+									$('table').find($('input[type="checkbox"]')).before(checkboxContainer);
+									break;
+								case 5:
+									$('table').find($('a[href^="#projekt"]')).addClass('href-projekt').closest('td').addClass('href-projekt-background');
+									break;
+								case 6:
+									toggleButtonVisibility();
+									break;
+								case 7:
+									$('ol[class*="list"], ul[class*="list"], ol[style*="list"], ul[style*="list"]').each(function() {
+										const newItem = $('<li>').text('Nowy element');
+										$(this).append(newItem);
+									});
+									break;
+							}
+						} else {
+							$(this).removeClass('z3buttonPressed');
+							switch (buttonId) {
+								case 0:
+									$('.quote').children('p').removeClass('quote-style');
+									break;
+								case 1:
+									$('table tbody').find('td input').slideDown(500);
+									break;
+								case 2:
+									const rows = $('table').find('tbody tr');
+									rows.removeClass('previous-row current-row next-row');
+									break;
+								case 3:
+									$('table').find($('input[placeholder]')).each(function() {
+										$(this).removeClass('stylized-input');
+									});
+									break;
+								case 4:
+									$('table').find($('.checkbox-container')).remove();
+									break;
+								case 5:
+									$('table').find($('a[href^="#projekt"]')).removeClass('href-projekt').closest('td').removeClass('href-projekt-background');
+									break;
+								case 6:
+									toggleButtonVisibility();
+									break;
+								case 7:
+									$('ul[class*="list"], ol[class*="list"], ul[style*="list"], ol[style*="list"]').each(function() {
+										$(this).find('li:last').remove();
+									});
+									break;
+							}
+						}
+					});	// click end
+
+					function toggleButtonVisibility() {
+						$('button[id$="example-button"]').each(function() {
+							$(this).fadeToggle(400);
+						});
+					}
+				</script>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="projekt7">
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Projekt 7</h1>
+				<h2>ZADANIE 2. Na kreatywność i umiejętność czytania dokumentacji</h2><br><br>
+<!--				ZADANIE 3 - na kreatywność i umiejętność czytania dokumentacji-->
+				<div class="z3buttonContainer">
+					<button id="z3button1v2" class="z3buttonv2">1. Gradientowe tło dla parzystych wierszy</button>
+					<button id="z3button2v2" class="z3buttonv2">2. Żółte tło i pogrubiona czcianka dla neiparzystych wierszy</button>
+					<button id="z3button3v2" class="z3buttonv2">3. Ukrycie / Pokazanie ozaczonych za pomocą klasy nieparzystych wierszy</button>
+					<button id="z3button4v2" class="z3buttonv2">4. Ukryj / Pokaż pierwszą i ostatnią kolumnę tabeli</button>
+					<button id="z3button5v2" class="z3buttonv2">5. Zmiana koloru czcionki dla tekstów niebędocych linkami</button>
+					<button id="z3button6v2" class="z3buttonv2">6. Styl dla komórek z elemetami typu input</button>
+					<button id="z3button7v2" class="z3buttonv2">7. Dodanie stylu zakeślenia do znaczników p zawierających kropki</button>
+					<button id="z3button8v2" class="z3buttonv2">8. Ukrycie / Ponowne wyświetlenie przycisków</button>
+				</div>
+
+				<script>
+					const buttonv2Ids = [
+						'z3button1v2', 'z3button2v2', 'z3button3v2', 'z3button4v2',
+						'z3button5v2', 'z3button6v2', 'z3button7v2', 'z3button8v2'
+					];
+
+					$('.z3buttonv2').click(function(){
+						const buttonv2Id = buttonv2Ids.indexOf($(this).attr('id'));
+						if(!$(this).hasClass('z3buttonPressed')){
+							$(this).addClass('z3buttonPressed');
+							switch (buttonv2Id) {
+								case 0:
+									$('table tbody tr:even').addClass('grad-background');
+									break;
+								case 1:
+									$('table tbody tr:odd').addClass('odd-background');
+									break;
+								case 2:
+									$('table tbody tr.marked:even').fadeToggle(700);
+									break;
+								case 3:
+									$('table tr').each(function() {
+										$(this).find('td:first').slideUp(300);
+										$(this).find('td:last').slideUp(300);
+									});
+									break;
+								case 4:
+									$('table td:not(:has(a))').addClass('no-link-text');
+									break;
+								case 5:
+									$('table tbody td:has(input)').addClass('fine-style');
+									break;
+								case 6:
+									$('table tbody p:contains(".")').addClass('highlight-text');
+									break;
+								case 7:
+									$('button[id$="example-button"]').hide();
+									break;
+							}
+						} else {
+							$(this).removeClass('z3buttonPressed');
+							switch (buttonv2Id) {
+								case 0:
+									$('table tbody tr:even').removeClass('grad-background');
+									break;
+								case 1:
+									$('table tbody tr:odd').removeClass('odd-background');
+									break;
+								case 2:
+									$('table tbody tr.marked:even').fadeToggle(700);
+									break;
+								case 3:
+									$('table tr').each(function() {
+										$(this).find('td:first').slideDown(300);
+										$(this).find('td:last').slideDown(300);
+									});
+									break;
+								case 4:
+									$('table td:not(:has(a))').removeClass('no-link-text');
+									break;
+								case 5:
+									$('table tbody td:has(input)').removeClass('fine-style');
+									break;
+								case 6:
+									$('table tbody p:contains(".")').removeClass('highlight-text');
+									break;
+								case 7:
+									$('button[id$="example-button"]').show();
+									break;
+							}
+						}
+					});	// click end
+				</script>
+
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container" style="margin-top: 5%">
+			<button type="button" class="btn btn-link" data-toggle="modal"
+				data-target="#myModal">Polityka prywatności</button>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel1">Polityka prywatności</h4>
+				</div>
+				<div class="modal-body">polityka prywatności...</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-warning btn-sm"
+						data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="ModalForm" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel2">Kontakt</h4>
+				</div>
+				<div class="modal-body">
+					<section id="form" style="margin-top: 5%">
+						<form action="index.html#kontakt" method="post"
+							onsubmit="return checkForm();">
+							<fieldset>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="hide" id="errorName">Podanie imienia jest
+											wymagane!</p>
+									</div>
+								</div>
+								<div class="row" id="success">
+									<div class="col-md-2" align="right">
+										<label class="control-label" for="contactName">Imię</label>
+									</div>
+									<div class="col-md-4">
+										<input type="text" class="form-control " id="contactName"
+											aria-describedby="inputSuccess5Status" onblur="checkName()" />
+										<span class="hide" aria-hidden="true" id="true"></span> <span
+											id="inputSuccess5Status" class="sr-only">(success)</span>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="hide" id="errorLastName">Podanie nazwiska jest
+											wymagane!</p>
+									</div>
+								</div>
+								<div class="row" id="success2">
+									<div class="col-md-2" align="right">
+										<label class="control-label" for="contactLastName">Nazwisko</label>
+									</div>
+									<div class="col-md-4">
+										<input type="text" class="form-control " id="contactLastName"
+											aria-describedby="inputSuccess5Status"
+											onblur="checkLastName()" /> <span class="hide"
+											aria-hidden="true" id="true2"></span> <span
+											id="inputSuccess5Status2" class="sr-only">(success)</span>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-md-12">
+										<p class="hide" id="errorEmail">Podanie emaila jest
+											wymagane!</p>
+										<p class="hide" id="errorEmail2">Błędny email!</p>
+									</div>
+								</div>
+								<div class="row" id="success3">
+									<div class="col-md-2" align="right">
+										<label class="control-label" for="contactEmail">Email</label>
+									</div>
+									<div class="col-md-4">
+										<input type="text" class="form-control " id="contactEmail"
+											aria-describedby="inputSuccess5Status" onblur="checkEmail()" />
+										<span class="hide" aria-hidden="true" id="true3"></span> <span
+											id="inputSuccess5Status3" class="sr-only">(success)</span>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-md-2" align="right">
+										<label for="Info">Informacje</label>
+									</div>
+									<div class="col-md-4">
+										<textarea name="Informacje" cols="30" rows="7" id="Info"
+											maxlength="250"></textarea>
+									</div>
+								</div>
+								<br>
+								<div class="row ">
+									<div class="col-md-2"></div>
+									<div class="col-md-3">
+										<input class="btn btn-primary" type="submit" value="Wyślij" />
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-warning btn-sm"
+						data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script src="js/forms.js"></script>
+	
+</body>
+
+</html>
