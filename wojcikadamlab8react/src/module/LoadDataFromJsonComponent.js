@@ -12,7 +12,7 @@ function LoadDataFromJsonComponent() {
     ]);
 
     function loadData(fileName) {
-        fetch(`/jsonData/${fileName}`)
+        fetch(`${process.env.PUBLIC_URL}/jsonData/${fileName}`)
             .then(function(response) {
                 if (!response.ok) {
                     throw new Error('Nie udało się załadować pliku.');
