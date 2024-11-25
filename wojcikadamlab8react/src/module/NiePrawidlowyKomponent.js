@@ -1,5 +1,6 @@
 import React from 'react';
 import { harkonnenList } from '../data/harkonnenData';
+import styles from '../styles/PrawidlowyKomponent.module.css';
 
 function NiePrawidlowyKomponent(props) {
     let index = 0;
@@ -11,7 +12,7 @@ function NiePrawidlowyKomponent(props) {
     let character = harkonnenList[index];
 
     return (
-        <div>
+        <div className={styles.galeria}>
             <h2>Niepoprawna Galeria Harkonenów</h2>
             <button onClick={handleClick}>Kolejny</button>
             <h4>({index + 1} of {harkonnenList.length})</h4>
