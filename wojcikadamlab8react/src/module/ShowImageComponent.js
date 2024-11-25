@@ -14,7 +14,7 @@ function ShowImageComponent() {
             <button onClick={showImage}>
                 {show ? 'Schowaj Baron w wannie' : 'Pokaż Baron w wannie'}
             </button>
-            {show && <img src="/assets/wanna.jpg" alt="Baron w wannie"/>}
+            {show && <img src={`${process.env.PUBLIC_URL}/assets/wanna.jpg`} alt="Baron w wannie"/>}
         </div>
     );
 }

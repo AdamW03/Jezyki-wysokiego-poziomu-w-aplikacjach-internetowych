@@ -19,7 +19,7 @@ function NiePrawidlowyKomponent(props) {
             <h3>
                 <i>{character.name}</i> ({character.role})
             </h3>
-            <img src={character.imagePath} alt={character.name}/>
+            <img src={`${process.env.PUBLIC_URL}`+character.imagePath} alt={character.name}/>
             <p>{character.description}</p>
         </div>
     );

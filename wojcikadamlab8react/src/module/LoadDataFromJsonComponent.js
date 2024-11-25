@@ -29,9 +29,9 @@ function LoadDataFromJsonComponent() {
             });
     }
 
-    function addFile(newFile) {
-        setFileList(prevFileList => [...prevFileList, newFile]);
-    }
+    // function addFile(newFile) {
+    //     setFileList(prevFileList => [...prevFileList, newFile]);
+    // }
 
     return (
         <div className={styles.load_data_container}>
