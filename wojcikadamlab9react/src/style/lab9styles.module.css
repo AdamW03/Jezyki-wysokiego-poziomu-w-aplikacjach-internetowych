@@ -1,0 +1,75 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    color: #444;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.2rem;
+}
+
+/* Listy */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Formularze */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.not-found {
+    text-align: center;
+}
+
+.not-found h1 {
+    color: red;
+}
