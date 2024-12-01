@@ -4,6 +4,8 @@ import AboutComponent from "./component/AboutComponent";
 import InterestsComponent from "./component/InterestsComponent";
 import ContactComponent from "./component/ContactComponent";
 import FavoriteGameComponent from "./component/FavoriteGameComponent";
+import NotFound from "./component/NotFound";
+import Lab7AppComponent from "./component/Lab7AppComponent";
 
 function App() {
   return (
@@ -13,6 +15,9 @@ function App() {
           <li><Link to="/">O mnie</Link></li>
           <li><Link to="/interests">Zainteresowania</Link></li>
           <li><Link to="/favoritegame">Ulubiona Gra</Link></li>
+          <li><Link to="/lab7">Lab 7</Link></li>
+          {/*<li><Link to="/lab8">Lab 8</Link></li>*/}
+          <li><Link to="/favoritegame">Ulubiona Gra</Link></li>
           <li><Link to="/contact">Kontakt</Link></li>
         </ul>
       </nav>
@@ -20,7 +25,10 @@ function App() {
         <Route path="/" element={<AboutComponent />} />
         <Route path="/interests" element={<InterestsComponent />} />
         <Route path="/favoritegame" element={<FavoriteGameComponent />} />
+        <Route path="/lab7" element={<Lab7AppComponent />} />
+        {/*<Route path="/" element={< />} />*/}
         <Route path="/contact" element={<ContactComponent />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

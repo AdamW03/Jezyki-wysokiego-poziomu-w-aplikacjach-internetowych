@@ -1,75 +1,231 @@
-.container {
-    width: 80%;
-    margin: 0 auto;
+.generalContainer {
+    font-family: 'Arial', sans-serif;
+    margin: 40px auto;
     padding: 20px;
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    color: #333;
-    font-size: 2rem;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 80vw;
 }
 
-h2 {
-    color: #444;
-    font-size: 1.5rem;
-    margin-top: 20px;
+.generalContainer h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-h3 {
-    color: #555;
-    font-size: 1.2rem;
-}
-
-/* Listy */
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-ul li {
+.generalContainer p {
     font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin: 10px 15vw;
+    text-align: left;
+}
+
+.generalContainer ul {
+    list-style-type: disc;
+    margin: 20px 15vw;
+    padding: 0;
+    text-align: left;
+}
+
+.generalContainer ul li {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
     margin-bottom: 10px;
 }
 
-/* Formularze */
-form {
+.formContainer {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 20px;
 }
 
-label {
-    font-weight: bold;
+.formField {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.formField label {
     font-size: 1rem;
+    color: #444;
+    margin-bottom: 5px;
 }
 
-input, textarea {
+.formField input, .formField textarea {
+    font-size: 1rem;
     padding: 10px;
-    font-size: 1rem;
+    width: 100%;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
+.formField textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submitButton {
     font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
+.submitButton:hover {
     background-color: #45a049;
 }
 
-.not-found {
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #4CAF50;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+}
+
+nav ul li a:active {
+    background-color: #388e3c;
+}
+
+body {
+    padding-top: 40px;
+}
+
+.notFound {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffe6e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(255, 0, 0, 0.2);
+    width: 60vw;
+}
+
+.notFound h1 {
+    font-size: 3rem;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.notFound p {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.5;
+    margin: 10px;
+}
+
+.notFound a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.notFound a:hover {
+    background-color: #45a049;
+}
+
+.sectionImage {
+    width: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.generalContainer ul {
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    text-align: left;
+    width: 80%;
+}
+
+.generalContainer ul li {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-.not-found h1 {
-    color: red;
+.generalContainer ul li::before {
+    content: "• ";
+    font-size: 2rem;
+    margin-right: 10px;
+    width: 5px;
+    height: 5px;
+    vertical-align: middle;
 }
+
+.infoTable {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.infoTable th, .infoTable td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.infoTable th {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+.infoTable tr:hover {
+    background-color: #e9f7e3;
+}
+
+.infoTable td {
+    color: #333;
+}
+

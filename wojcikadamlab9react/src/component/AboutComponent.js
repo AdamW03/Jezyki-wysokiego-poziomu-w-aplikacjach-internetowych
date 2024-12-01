@@ -3,7 +3,7 @@ import styles from '../style/lab9styles.module.css';
 
 function AboutComponent() {
     return (
-        <div className={styles.container}>
+        <div className={styles.generalContainer}>
             <h1>O Mnie</h1>
             <p>Jestem osobą o szerokich zainteresowaniach w dziedzinie technologii, programowania i rozwoju systemów
                 komputerowych. Zajmuję się projektowaniem, tworzeniem i wdrażaniem rozwiązań informatycznych, z
