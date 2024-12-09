@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+h2 {
+    font-size: 2.5em;
+}
+
+.contact-container {
+    font-family: "Courier New", monospace;
+    background-color: #f0ffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contact-header {
+    padding: 20px;
+    background-color: #006666;
+    color: #fff;
+    text-align: center;
+}
+
+
+.contact-main {
+    padding: 20px;
+}
+
+
+.contact-footer {
+    padding: 10px;
+    background-color: #004444;
+    color: #bbb;
+    text-align: center;
+}

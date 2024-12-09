@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+h2 {
+    font-size: 2.5em;
+}
+.favoritegame-container {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.favoritegame-header {
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+}
+
+.favoritegame-main {
+    padding: 20px;
+}
+
+.favoritegame-footer {
+    padding: 10px;
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+}

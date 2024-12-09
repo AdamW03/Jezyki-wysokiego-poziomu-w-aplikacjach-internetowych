@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 2.5em;
+}
+
+.interests-container {
+    font-family: Georgia, serif;
+    background-color: #e6e6fa;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+.interests-header {
+    padding: 20px;
+    background-color: #888;
+    color: #fff;
+    text-align: center;
+}
+
+.interests-main {
+    padding: 20px;
+}
+
+.interests-footer {
+    padding: 10px;
+    background-color: #444;
+    color: #ddd;
+    text-align: center;
+}

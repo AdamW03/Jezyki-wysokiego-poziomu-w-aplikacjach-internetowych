@@ -1,95 +1,60 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from 'react';
+import styles from './styles/page.module.css';
+import Container from './components/Container';
+import Section from './components/Section';
 
-export default function Home() {
+function AboutComponent() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      <div className={styles.page}>
+          <main>
+            <Container>
+                <Section
+                    title="O Mnie"
+                    titleLevel={1}
+                    paragraphs={["Jestem osobą o szerokich zainteresowaniach w dziedzinie technologii, programowania i rozwoju systemów komputerowych. Zajmuję się projektowaniem, tworzeniem i wdrażaniem rozwiązań informatycznych, z naciskiem na efektywność i innowacyjność."]}
+                />
+                <Section
+                    title="Obszary Zainteresowań"
+                    titleLevel={2}
+                    paragraphs={["Moje główne zainteresowania obejmują:"]}
+                    listItems={[
+                      "Inżynieria oprogramowania - projektowanie aplikacji internetowych i mobilnych",
+                      "Robotyka - tworzenie systemów automatyki i rozwiązań sterujących",
+                      "Systemy rozproszone i chmurowe - rozwój aplikacji opartych na chmurze oraz DevOps",
+                      "Gry komputerowe - szczególnie te, które angażują umiejętności analityczne i strategiczne",
+                      "Badania nad sztuczną inteligencją oraz uczeniem maszynowym"
+                    ]}
+                />
+                <Section
+                    title="Doświadczenie zawodowe"
+                    titleLevel={2}
+                    paragraphs={["W ciągu mojej kariery zawodowej uczestniczyłem w licznych projektach, obejmujących:"]}
+                    listItems={[
+                      "Tworzenie aplikacji webowych i mobilnych przy użyciu nowoczesnych frameworków i technologii",
+                      "Prace badawcze związane z zastosowaniem sztucznej inteligencji w różnych dziedzinach",
+                      "Rozwój i integracja systemów automatyzujących procesy przemysłowe",
+                      "Praca z narzędziami wspomagającymi rozwój oprogramowania i testowanie aplikacji"
+                    ]}
+                />
+                <Section
+                    title="Plany na przyszłość"
+                    titleLevel={2}
+                    paragraphs={["W najbliższej przyszłości planuję kontynuować rozwój w następujących obszarach:"]}
+                    listItems={[
+                      "Doskonalenie umiejętności w zakresie sztucznej inteligencji i uczenia maszynowego",
+                      "Praca nad projektami związanymi z blockchainem i rozproszonymi aplikacjami",
+                      "Współpraca przy tworzeniu innowacyjnych systemów w chmurze"
+                    ]}
+                />
+                <Section
+                    title="Filozofia pracy"
+                    titleLevel={2}
+                    paragraphs={["W pracy zawodowej kieruję się zasadą ciągłego doskonalenia i dążenia do optymalizacji procesów. Zawsze stawiam na jakość, innowacyjność i zrozumienie potrzeb użytkowników końcowych, co pozwala na tworzenie rozwiązań spełniających wysokie standardy."]}
+                />
+              </Container>
+          </main>
+      </div>
   );
 }
+
+export default AboutComponent;
