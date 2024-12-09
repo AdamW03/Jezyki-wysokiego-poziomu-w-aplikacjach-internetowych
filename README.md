@@ -26,4 +26,4 @@ https://adamw03.github.io/wojciklab8react
 https://AdamW03.github.io/wojciklab9react
 
 ## Laboratorium 10
-https://adamw03.github.io/wojciklab10next
+https://wojciklab10next.vercel.app
