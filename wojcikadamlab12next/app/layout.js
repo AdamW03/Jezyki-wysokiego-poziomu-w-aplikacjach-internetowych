@@ -12,7 +12,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <MainHeaderBackground />
-
         <MainHeader />
         {children}
       </body>
