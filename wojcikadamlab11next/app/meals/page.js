@@ -1,9 +1,11 @@
-export default function Home() {
+import Title from "@/components/Title/Title";
+import NavbarMeal from "@/components/NavbarMeal/NavbarMeal";
+
+export default function Meals() {
   return (
     <main>
-      <h1 style={{ color: 'white', textAlign: 'center' }}>
-        Laboratorium nr 11 - projekt startowy
-      </h1>
+        <Title text={"Meals"} />
+        <NavbarMeal />
     </main>
   );
 }

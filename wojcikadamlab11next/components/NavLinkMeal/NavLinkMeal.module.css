@@ -1,0 +1,79 @@
+.navItem {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navItem:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    width: 100%;
+}
+
+.navLink:hover {
+    color: #ff8a05;
+}
+
+.iconWrapper {
+    margin-bottom: 1rem;
+    width: 64px;
+    height: 64px;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkText {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ddd6cb;
+    transition: color 0.3s ease;
+}
+
+.navItem:hover .linkText {
+    color: #ff8a05;
+}
+
+.description {
+    font-size: 1rem;
+    color: #ddd6cb;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.shareLink {
+    color: #ff8a05;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.shareLink:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    margin-left: 10%;
+    margin-right: 10%;
+}
