@@ -5,6 +5,7 @@ import styles from './main-header.module.css';
 import logoImg from '@/assets/logo.png';
 import mealsImg from '@/assets/icons/meal.png';
 import communityImg from '@/assets/icons/community.png';
+import NavLink from "@/components/NavLink/NavLink";
 
 function MainHeader() {
     return (
@@ -22,28 +23,10 @@ function MainHeader() {
             <nav className={styles.nav}>
                 <ul>
                     <li>
-                        <Link href="/meals" className={styles.logo}>
-                            <Image
-                                src={mealsImg}
-                                width={500}
-                                height={500}
-                                alt="A plate with one dish on it"
-                                priority
-                            />
-                            <span>Browse Meals</span>
-                        </Link>
+                        <NavLink href="/meals">Browse Meals</NavLink>
                     </li>
                     <li>
-                        <Link href="/community" className={styles.logo}>
-                            <Image
-                                src={communityImg}
-                                width={500}
-                                height={500}
-                                alt="A group of friends in kitchen"
-                                priority
-                            />
-                            <span>Foodies Community</span>
-                        </Link>
+                        <NavLink href="/community">Foodies Community</NavLink>
                     </li>
                 </ul>
             </nav>

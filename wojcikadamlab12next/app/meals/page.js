@@ -1,11 +1,14 @@
-import Title from "@/components/Title/Title";
-import NavbarMeal from "@/components/NavbarMeal/NavbarMeal";
+import MealHeader from "@/components/MealHeader/MealHeader";
+import styles from "./page.module.css";
+import MealGrid from "@/components/meals/meal-grid";
 
 export default function Meals() {
   return (
-    <main>
-        <Title text={"Meals"} />
-        <NavbarMeal />
-    </main>
+      <>
+        <MealHeader />
+        <main className={styles.main}>
+            <MealGrid meals={[]} />
+        </main>
+      </>
   );
 }
