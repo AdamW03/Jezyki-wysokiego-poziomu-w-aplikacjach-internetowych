@@ -32,5 +32,5 @@ https://wojciklab10next.vercel.app
 https://wojciklab11next.vercel.app
 
 ## Laboratorium 12
-https://wojciklab12next.vercel.app/meals
+https://wojciklab12next.vercel.app
 
