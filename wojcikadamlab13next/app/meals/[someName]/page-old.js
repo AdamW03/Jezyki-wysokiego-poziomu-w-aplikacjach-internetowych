@@ -6,7 +6,7 @@ import Image from "next/image";
 import styles from './MealDetail.module.css';
 
 
-export default function MealDetailPage() {
+export default function MealDetail() {
     const { someName } = useParams();
     const imagePath = `/images/${someName}.jpg`;
     return (
@@ -23,8 +23,4 @@ export default function MealDetailPage() {
             </div>
         </main>
 );
-}
-
-export function getMeal(slug) {
-    return db.prepare('SELECT * FROM meals WHERE slug = ?').get(slug);
 }

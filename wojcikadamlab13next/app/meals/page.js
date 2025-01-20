@@ -1,15 +1,17 @@
 import MealHeader from "@/components/MealHeader/MealHeader";
 import styles from "./page.module.css";
-import MealGrid from "@/components/meals/meal-grid";
-import {getMeals} from "@/lib/meals";
+import Meals from "@/components/meals/meals";
+import {Suspense} from "react";
+import classes from "@/app/meals/loading-out.module.css";
 
-export default async function Meals() {
-    const meals = await getMeals();
+export default async function MealsPage() {
   return (
       <>
         <MealHeader />
         <main className={styles.main}>
-            <MealGrid meals={meals} />
+            <Suspense fallback={<p className={classes.loading}>Fetching meals...</p>}>
+                <Meals/>
+            </Suspense>
         </main>
       </>
   );
