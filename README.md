@@ -34,3 +34,6 @@ https://wojciklab11next.vercel.app
 ## Laboratorium 12
 https://wojciklab12next.vercel.app
 
+## Laboratorium 13
+https://wojciklab13next.vercel.app
+
