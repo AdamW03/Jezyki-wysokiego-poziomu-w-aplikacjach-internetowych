@@ -1,4 +1,3 @@
-import Title from "@/components/Title/Title";
 import styles from './page.module.css';
 
 export default function Share() {
@@ -8,7 +7,6 @@ export default function Share() {
                 <h1>Share a Meal</h1>
             </header>
 
-            {/* Sekcja formularza */}
             <section className={styles.formSection}>
                 <h2 className={styles.formTitle}>Tell us about your meal!</h2>
                 <form className={styles.form}>
@@ -47,11 +45,10 @@ export default function Share() {
                 </form>
             </section>
 
-            {/* Sekcja informacyjna */}
             <section className={styles.infoSection}>
                 <h3>Why Share Your Meal?</h3>
-                <p>Sharing meals helps others discover new and exciting recipes! Whether it's a family favorite or
-                    something you created from scratch, we'd love to see it!</p>
+                <p>Sharing meals helps others discover new and exciting recipes! Whether it&aposs a family favorite or
+                    something you created from scratch, we&aposd love to see it!</p>
             </section>
         </main>
     );
