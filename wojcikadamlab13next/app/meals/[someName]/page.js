@@ -4,12 +4,13 @@ import pageStyles from './page.module.css';
 import {getMeal} from "@/lib/meals";
 
 
-export default function MealDetailPage({ params }) {
-    const { someName } = params;
-    const mealData = getMeal(someName);
+export default async function MealDetailPage({ params }) {
+    // const { someName } = params;
+    // const mealData = getMeal(someName);
+    const mealData = await getMeal(params.someName);
 
     if (!someName) {
-        return <p>Loading...</p>;
+        return <p>Not Found</p>;
     }
     return (
         <main className={pageStyles.header}>
