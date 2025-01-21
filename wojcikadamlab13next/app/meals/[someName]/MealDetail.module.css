@@ -1,13 +1,13 @@
 .imageContainer {
     display: flex;
-    justify-content: center; /* Centruje obrazek */
-    align-items: center; /* Centruje obrazek pionowo */
-    margin-top: 2rem; /* Odstęp od góry */
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .mealImage {
-    border-radius: 10px; /* Zaokrąglone rogi */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dodanie cienia do obrazka */
-    max-width: 100%; /* Maksymalna szerokość */
-    height: auto; /* Zachowanie proporcji zdjęcia */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
 }

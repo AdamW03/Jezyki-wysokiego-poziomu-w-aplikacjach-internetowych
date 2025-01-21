@@ -1,0 +1,90 @@
+.main {
+    padding: 3rem 2rem;
+    max-width: 70rem;
+    margin: auto;
+    color: #333;
+}
+
+.header {
+    gap: 3rem;
+    margin: 3rem auto 5rem auto;
+    width: 90%;
+    max-width: 75rem;
+    color: #ddd6cb;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.formSection {
+    margin-top: 3rem;
+}
+
+.formTitle {
+    font-size: 2rem;
+    color: #f9572a;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.form {
+    display: grid;
+    gap: 2rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 6rem;
+}
+
+.submitButton {
+    padding: 1rem 2rem;
+    background-color: #ff8a05;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+    background-color: #f9572a;
+}
+
+.infoSection {
+    margin-top: 4rem;
+    background-color: #f8f4f1;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.infoSection h3 {
+    font-size: 2rem;
+    color: #f9572a;
+}
+
+.infoSection p {
+    font-size: 1.2rem;
+    color: #555;
+}
